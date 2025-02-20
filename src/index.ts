@@ -26,10 +26,10 @@ mongoose.connect(mongoURI).then(()=>{
 
 app.use('/driver-schedules/', driverScheduleRouter)
 
-https.createServer(sslOptions, app).listen(port, () => {
-  console.log(`Server Running on HTTPS Port ${port}`);
-});
+// https.createServer(sslOptions, app).listen(port, () => {
+//   console.log(`Server Running on HTTPS Port ${port}`);
+// });
 
-// app.listen(port, ()=>{
-//   console.log(`Server Running on Port ${port}`)
-// })
+app.listen(port, ()=>{
+  console.log(`Server Running on Port ${port}`)
+})
