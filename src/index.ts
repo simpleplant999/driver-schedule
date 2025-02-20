@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 import driverScheduleRouter from './routes/driver-schedules'
 import cors from 'cors'
 const app: Express = express();
-const port = process.env.PORT || 443;
+const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(cors())
